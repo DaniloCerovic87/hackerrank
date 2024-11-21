@@ -1,4 +1,4 @@
-package problem1_SolveMeFirst;
+package problem01_SolveMeFirst;
 
 public class SolveMeFirst {
 

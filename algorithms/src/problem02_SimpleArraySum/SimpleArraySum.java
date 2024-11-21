@@ -1,4 +1,4 @@
-package problem2_SimpleArraySum;
+package problem02_SimpleArraySum;
 
 import java.util.Arrays;
 import java.util.List;
