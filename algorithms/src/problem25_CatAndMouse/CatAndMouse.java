@@ -9,7 +9,7 @@ public class CatAndMouse {
 
     }
 
-    public static String catAndMouse(int x, int y, int z) {
+    private static String catAndMouse(int x, int y, int z) {
         int distanceFromCatA = Math.abs(x - z);
         int distanceFromCatB = Math.abs(y - z);
 

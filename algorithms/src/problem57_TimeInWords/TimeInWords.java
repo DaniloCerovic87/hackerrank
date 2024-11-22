@@ -13,7 +13,35 @@ public class TimeInWords {
 
     }
 
-    public static String timeInWords(int h, int m) {
+    private static String timeInWords(int h, int m) {
+        Map<Integer, String> numToWords = createNumToWordsMap();
+
+        String hour = numToWords.get(h);
+        String nextHour = numToWords.get(h == 12 ? 1 : h + 1);
+        String minutesString = "minutes";
+        String past = "past";
+        String to = "to";
+
+        if (m == 0) {
+            return hour + " o' clock";
+        }
+
+        if (m <= 30) {
+            if (m == 15 || m == 30) {
+                return numToWords.get(m) + " " + past + " " + hour;
+            }
+
+            return numToWords.get(m) + " " + (m == 1 ? "minute" : minutesString) + " " + past + " " + hour;
+        }
+
+        int minutesToNextHour = 60 - m;
+        if (minutesToNextHour == 15) {
+            return numToWords.get(minutesToNextHour) + " " + to + " " + nextHour;
+        }
+        return numToWords.get(minutesToNextHour) + " " + minutesString + " " + to + " " + nextHour;
+    }
+
+    private static Map<Integer, String> createNumToWordsMap() {
         Map<Integer, String> numToWords = new HashMap<>();
         numToWords.put(1, "one");
         numToWords.put(2, "two");
@@ -45,30 +73,7 @@ public class TimeInWords {
         numToWords.put(28, "twenty eight");
         numToWords.put(29, "twenty nine");
         numToWords.put(30, "half");
-
-        String hour = numToWords.get(h);
-        String nextHour = numToWords.get(h == 12 ? 1 : h + 1);
-        String minutesString = "minutes";
-        String past = "past";
-        String to = "to";
-
-        if (m == 0) {
-            return hour + " o' clock";
-        }
-
-        if (m <= 30) {
-            if (m == 15 || m == 30) {
-                return numToWords.get(m) + " " + past + " " + hour;
-            }
-
-            return numToWords.get(m) + " " + (m == 1 ? "minute" : minutesString) + " " + past + " " + hour;
-        }
-
-        int minutesToNextHour = 60 - m;
-        if (minutesToNextHour == 15) {
-            return numToWords.get(minutesToNextHour) + " " + to + " " + nextHour;
-        }
-        return numToWords.get(minutesToNextHour) + " " + minutesString + " " + to + " " + nextHour;
+        return numToWords;
     }
 
 

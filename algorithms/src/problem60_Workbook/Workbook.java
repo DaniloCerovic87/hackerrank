@@ -10,7 +10,7 @@ public class Workbook {
         System.out.println(workbook(3, Arrays.asList(4, 2, 6, 1, 10)));
     }
 
-    public static int workbook(int k, List<Integer> arr) {
+    private static int workbook(int k, List<Integer> arr) {
         int countSpecialCases = 0;
         int pageNumber = 1;
 

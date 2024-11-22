@@ -10,7 +10,7 @@ public class ChocolateFeast {
 
     }
 
-    public static int chocolateFeast(int n, int c, int m) {
+    private static int chocolateFeast(int n, int c, int m) {
         int count = n / c;
         int wrappers = count;
 

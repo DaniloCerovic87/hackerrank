@@ -6,7 +6,7 @@ public class SherlockAndSquares {
         System.out.println(squares(25, 50));
     }
 
-    public static int squares(int a, int b) {
+    private static int squares(int a, int b) {
         int start = (int) Math.ceil(Math.sqrt(a));
         int end = (int) Math.floor(Math.sqrt(b));
         return end - start + 1;

@@ -10,7 +10,7 @@ public class HalloweenSale {
         System.out.println(howManyGames(20, 3, 6, 80));
     }
 
-    public static int howManyGames(int p, int d, int m, int s) {
+    private static int howManyGames(int p, int d, int m, int s) {
         int counter = 0;
         while (s >= p) {
             s -= p;

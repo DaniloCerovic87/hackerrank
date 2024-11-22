@@ -11,7 +11,7 @@ public class PickingNumbers {
 
     }
 
-    public static int pickingNumbers(List<Integer> a) {
+    private static int pickingNumbers(List<Integer> a) {
         int[] occurrences = new int[101];
         int longestSubarray = 0;
 

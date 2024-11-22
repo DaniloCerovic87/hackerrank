@@ -13,7 +13,7 @@ public class ClimbingLeaderboard {
         System.out.println(climbingLeaderboard(rankings, playerScores));
     }
 
-    public static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
+    private static List<Integer> climbingLeaderboard(List<Integer> ranked, List<Integer> player) {
         List<Integer> ranks = ranked.stream().distinct().collect(Collectors.toList());
         List<Integer> scores = new ArrayList<>();
         int rankIndex = ranks.size() - 1;

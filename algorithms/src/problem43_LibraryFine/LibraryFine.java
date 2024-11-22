@@ -6,7 +6,7 @@ public class LibraryFine {
         System.out.println(libraryFine(14, 7, 2018, 5, 7, 2018));
     }
 
-    public static int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2) {
+    private static int libraryFine(int d1, int m1, int y1, int d2, int m2, int y2) {
         int fine = 0;
         if (y1 > y2) {
             fine = 10000;

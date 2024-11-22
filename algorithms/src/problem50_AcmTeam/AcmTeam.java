@@ -12,7 +12,7 @@ public class AcmTeam {
         System.out.println(acmTeam(topics));
     }
 
-    public static List<Integer> acmTeam(List<String> topic) {
+    private static List<Integer> acmTeam(List<String> topic) {
         int countMaxTopic = 0;
         int numberOfTeams = 0;
         for (int i = 0; i < topic.size() - 1; i++) {

@@ -9,7 +9,7 @@ public class ElectronicShop {
         System.out.println(getMoneySpent(new int[]{5, 11}, new int[]{4}, 5));
     }
 
-    static int getMoneySpent(int[] keyboards, int[] drives, int b) {
+    private static int getMoneySpent(int[] keyboards, int[] drives, int b) {
         Arrays.sort(keyboards);
         Arrays.sort(drives);
 

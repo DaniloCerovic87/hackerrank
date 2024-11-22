@@ -6,7 +6,7 @@ public class CountingValleys {
         System.out.println(countingValleys(8, "UDDDUDUU"));
     }
 
-    public static int countingValleys(int steps, String path) {
+    private static int countingValleys(int steps, String path) {
         int seaLevel = 0;
         int valleyNumber = 0;
 

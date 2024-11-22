@@ -15,8 +15,7 @@ public class FormingMagicSquare {
 
     }
 
-
-    public static int formingMagicSquare(List<List<Integer>> s) {
+    private static int formingMagicSquare(List<List<Integer>> s) {
         List<List<List<Integer>>> magicSquares = Arrays.asList(
                 Arrays.asList(
                         Arrays.asList(8, 1, 6), Arrays.asList(3, 5, 7), Arrays.asList(4, 9, 2)

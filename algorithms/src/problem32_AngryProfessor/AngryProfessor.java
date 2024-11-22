@@ -10,7 +10,7 @@ public class AngryProfessor {
         System.out.println(angryProfessor(3, Arrays.asList(1, 2, 0, -1, -2)));
     }
 
-    public static String angryProfessor(int k, List<Integer> a) {
+    private static String angryProfessor(int k, List<Integer> a) {
         int countOnTime = 0;
 
         for (Integer e : a) {

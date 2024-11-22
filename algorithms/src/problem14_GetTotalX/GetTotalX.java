@@ -10,7 +10,7 @@ public class GetTotalX {
         System.out.println(getTotalX(Arrays.asList(2, 4), Arrays.asList(16, 32, 96)));
     }
 
-    public static int getTotalX(List<Integer> a, List<Integer> b) {
+    private static int getTotalX(List<Integer> a, List<Integer> b) {
 
         int lcmA = a.get(0);
         for (int i = 1; i < a.size(); i++) {

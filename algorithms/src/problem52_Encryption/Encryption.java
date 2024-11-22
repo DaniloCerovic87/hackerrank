@@ -6,7 +6,7 @@ public class Encryption {
         System.out.println(encryption("haveaniceday"));
     }
 
-    public static String encryption(String s) {
+    private static String encryption(String s) {
         String noSpacesString = s.replace(" ", "");
         int length = noSpacesString.length();
 

@@ -11,7 +11,7 @@ public class MinimumDistances {
         minimumDistances(Arrays.asList(1, 2, 3, 5, 6, 7, 4));
     }
 
-    public static int minimumDistances(List<Integer> a) {
+    private static int minimumDistances(List<Integer> a) {
         int min = Integer.MAX_VALUE;
         Map<Integer, Integer> previousIndices = new HashMap<>();
 

@@ -14,7 +14,7 @@ public class DesignPdfViewer {
 
     }
 
-    static int designPdfViewer(List<Integer> h, String word) {
+    private static int designPdfViewer(List<Integer> h, String word) {
         Map<Character, Integer> heightMap = new HashMap<>();
         for (int i = 0; i < 26; i++) {
             heightMap.put((char) ('a' + i), h.get(i));

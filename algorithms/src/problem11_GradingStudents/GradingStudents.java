@@ -9,7 +9,7 @@ public class GradingStudents {
         System.out.println(gradingStudents(Arrays.asList(37, 52, 54, 53, 56, 97)));
     }
 
-    public static List<Integer> gradingStudents(List<Integer> grades) {
+    private static List<Integer> gradingStudents(List<Integer> grades) {
         for (int i = 0; i < grades.size(); i++) {
             int grade = grades.get(i);
             int nextMultipleOf5 = (grade / 5 + 1) * 5;

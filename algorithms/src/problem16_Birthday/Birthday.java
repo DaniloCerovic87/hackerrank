@@ -10,7 +10,7 @@ public class Birthday {
         System.out.println(birthday(Arrays.asList(1, 2, 1, 3, 2), 3, 2));
     }
 
-    public static int birthday(List<Integer> s, int d, int m) {
+    private static int birthday(List<Integer> s, int d, int m) {
         int count = 0;
         int slidingSum = 0;
         int i = 0;

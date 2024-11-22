@@ -7,7 +7,7 @@ public class ViralAdvertising {
         System.out.println(viralAdvertising(3));
     }
 
-    public static int viralAdvertising(int n) {
+    private static int viralAdvertising(int n) {
         int numberOfLikes = 2;
         int cumulativeLikes = numberOfLikes;
 

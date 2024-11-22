@@ -10,7 +10,7 @@ public class HurdleRace {
         System.out.println(hurdleRace(1, heights));
     }
 
-    public static int hurdleRace(int k, List<Integer> height) {
+    private static int hurdleRace(int k, List<Integer> height) {
         int maxHeight = 0;
 
         for (Integer h : height) {

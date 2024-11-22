@@ -13,7 +13,7 @@ public class CircularArrayRotation {
         System.out.println(circularArrayRotation(a, k, queries));
     }
 
-    public static List<Integer> circularArrayRotation(List<Integer> a, int k, List<Integer> queries) {
+    private static List<Integer> circularArrayRotation(List<Integer> a, int k, List<Integer> queries) {
         int size = a.size();
         int[] movedElements = new int[size];
         for (int i = 0; i < size; i++) {

@@ -9,7 +9,7 @@ public class DivisibleSumPairs {
         System.out.println(divisibleSumPairs(6, 3, Arrays.asList(1, 3, 2, 6, 1, 2)));
     }
 
-    public static int divisibleSumPairs(int n, int k, List<Integer> ar) {
+    private static int divisibleSumPairs(int n, int k, List<Integer> ar) {
         int count = 0;
         int[] remainders = new int[n];
 

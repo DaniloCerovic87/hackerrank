@@ -10,7 +10,7 @@ public class ContainersOfBalls {
         System.out.println(organizingContainers(matrix));
     }
 
-    public static String organizingContainers(List<List<Integer>> container) {
+    private static String organizingContainers(List<List<Integer>> container) {
         int size = container.size();
         int[] numberPerContainer = new int[size];
         int[] numberPerType = new int[size];

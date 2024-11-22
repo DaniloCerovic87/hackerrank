@@ -6,7 +6,7 @@ public class TaumBday {
         System.out.println(taumBday(3, 5, 3, 4, 1));
     }
 
-    public static long taumBday(int b, int w, int bc, int wc, int z) {
+    private static long taumBday(int b, int w, int bc, int wc, int z) {
         if (wc > bc + z) {
             return (long) b * bc + (long) w * (bc + z);
         } else if (bc > wc + z) {

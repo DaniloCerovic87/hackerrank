@@ -8,7 +8,7 @@ public class PermutationEquation {
         System.out.println(permutationEquation(Arrays.asList(5, 2, 1, 3, 4)));
     }
 
-    public static List<Integer> permutationEquation(List<Integer> p) {
+    private static List<Integer> permutationEquation(List<Integer> p) {
         Map<Integer, Integer> positionMap = new HashMap<>();
         List<Integer> result = new ArrayList<>();
 

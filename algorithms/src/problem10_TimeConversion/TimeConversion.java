@@ -10,7 +10,7 @@ public class TimeConversion {
 
     }
 
-    public static String timeConversion(String s) {
+    private static String timeConversion(String s) {
         String[] parts = s.split(":");
         String part1 = parts[0];
         boolean isAM = s.endsWith("AM");

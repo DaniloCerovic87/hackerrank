@@ -6,7 +6,7 @@ public class FindDigits {
         System.out.println(findDigits(124));
     }
 
-    public static int findDigits(int n) {
+    private static int findDigits(int n) {
         int count = 0;
         char[] digits = String.valueOf(n).toCharArray();
         for (char c : digits) {

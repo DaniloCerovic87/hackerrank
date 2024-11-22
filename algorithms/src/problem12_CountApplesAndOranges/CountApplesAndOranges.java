@@ -12,7 +12,7 @@ public class CountApplesAndOranges {
 
     }
 
-    public static void countApplesAndOranges(int s, int t, int a, int b, List<Integer> apples, List<Integer> oranges) {
+    private static void countApplesAndOranges(int s, int t, int a, int b, List<Integer> apples, List<Integer> oranges) {
         int countApples = 0;
         int countOranges = 0;
 

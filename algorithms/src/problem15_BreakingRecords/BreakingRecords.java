@@ -9,7 +9,7 @@ public class BreakingRecords {
         System.out.println(breakingRecords(Arrays.asList(12, 24, 10, 24)));
     }
 
-    public static List<Integer> breakingRecords(List<Integer> scores) {
+    private static List<Integer> breakingRecords(List<Integer> scores) {
         Integer firstScore = scores.get(0);
         int max = firstScore;
         int min = firstScore;

@@ -11,7 +11,7 @@ public class SockMerchant {
         System.out.println(sockMerchant(7, Arrays.asList(1, 2, 1, 2, 1, 3, 2)));
     }
 
-    public static int sockMerchant(int n, List<Integer> ar) {
+    private static int sockMerchant(int n, List<Integer> ar) {
         int count = 0;
         Map<Integer, Integer> countByType = new HashMap<>();
 

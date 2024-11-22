@@ -9,7 +9,7 @@ public class EqualizeArray {
 
     }
 
-    public static int equalizeArray(List<Integer> arr) {
+    private static int equalizeArray(List<Integer> arr) {
         Map<Integer, Integer> occurrences = new HashMap<>();
 
         for (Integer integer : arr) {

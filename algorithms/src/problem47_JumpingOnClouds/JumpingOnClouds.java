@@ -9,7 +9,7 @@ public class JumpingOnClouds {
         System.out.println(jumpingOnClouds(Arrays.asList(0, 1, 0, 0, 0, 1, 0)));
     }
 
-    public static int jumpingOnClouds(List<Integer> c) {
+    private static int jumpingOnClouds(List<Integer> c) {
         int i = 0;
         int numberOfJumps = 0;
 

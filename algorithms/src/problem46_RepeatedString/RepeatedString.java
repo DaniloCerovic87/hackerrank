@@ -9,7 +9,7 @@ public class RepeatedString {
 
     }
 
-    public static long repeatedString(String s, long n) {
+    private static long repeatedString(String s, long n) {
         int length = s.length();
         long remainder = n % length;
         long numberOfWholeStrings = n / length;

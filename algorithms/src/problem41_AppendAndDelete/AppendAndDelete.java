@@ -7,7 +7,7 @@ public class AppendAndDelete {
         System.out.println(appendAndDelete("hackerhappy", "hackerrank", 9));
     }
 
-    public static String appendAndDelete(String s, String t, int k) {
+    private static String appendAndDelete(String s, String t, int k) {
 
         if (s.length() + t.length() <= k) {
             return "YES";

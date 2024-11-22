@@ -8,7 +8,7 @@ public class DayOfProgrammer {
         System.out.println(dayOfProgrammer(1750));
     }
 
-    public static String dayOfProgrammer(int year) {
+    private static String dayOfProgrammer(int year) {
         String day;
 
         if (year == 1918) {

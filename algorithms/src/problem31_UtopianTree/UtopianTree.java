@@ -6,7 +6,7 @@ public class UtopianTree {
         System.out.println(utopianTree(5));
     }
 
-    public static int utopianTree(int n) {
+    private static int utopianTree(int n) {
         int height = 1;
 
         for (int i = 1; i <= n; i++) {

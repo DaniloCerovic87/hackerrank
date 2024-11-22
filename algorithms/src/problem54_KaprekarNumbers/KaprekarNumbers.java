@@ -6,7 +6,7 @@ public class KaprekarNumbers {
         kaprekarNumbers(1, 99999);
     }
 
-    public static void kaprekarNumbers(int p, int q) {
+    private static void kaprekarNumbers(int p, int q) {
         StringBuilder stringBuilder = new StringBuilder();
         for (int i = p; i <= q; i++) {
             long quadratic = (long) i * i;

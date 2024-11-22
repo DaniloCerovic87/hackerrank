@@ -8,7 +8,7 @@ public class JumpingTheClouds {
 
     }
 
-    static int jumpingOnClouds(int[] c, int k) {
+    private static int jumpingOnClouds(int[] c, int k) {
         int energy = 100;
         int i = 0;
 

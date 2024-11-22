@@ -10,8 +10,7 @@ public class QueensAttack {
         System.out.println(queensAttack(8, 1, 4, 4, List.of(Arrays.asList(3, 5))));
     }
 
-
-    public static int queensAttack(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles) {
+    private static int queensAttack(int n, int k, int r_q, int c_q, List<List<Integer>> obstacles) {
         int count = 0;
         HashSet<String> obstaclePositions = new HashSet<>();
 

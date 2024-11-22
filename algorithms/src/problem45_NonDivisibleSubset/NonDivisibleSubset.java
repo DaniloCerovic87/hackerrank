@@ -10,7 +10,7 @@ public class NonDivisibleSubset {
         System.out.println(nonDivisibleSubset(4, list));
     }
 
-    public static int nonDivisibleSubset(int k, List<Integer> s) {
+    private static int nonDivisibleSubset(int k, List<Integer> s) {
         int size = s.size();
         int result = 0;
         int[] remainders = new int[k];

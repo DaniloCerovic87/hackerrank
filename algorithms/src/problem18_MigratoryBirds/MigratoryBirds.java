@@ -5,12 +5,11 @@ import java.util.*;
 public class MigratoryBirds {
 
     public static void main(String[] args) {
-
         System.out.println(migratoryBirds(Arrays.asList(1, 1, 2, 2, 3)));
 
     }
 
-    public static int migratoryBirds(List<Integer> arr) {
+    private static int migratoryBirds(List<Integer> arr) {
         Map<Integer, Integer> typeCounts = new HashMap<>();
 
         for (Integer integer : arr) {

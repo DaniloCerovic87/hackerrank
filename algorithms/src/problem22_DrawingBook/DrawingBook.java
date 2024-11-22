@@ -7,7 +7,7 @@ public class DrawingBook {
         System.out.println(pageCount(6, 2));
     }
 
-    public static int pageCount(int n, int p) {
+    private static int pageCount(int n, int p) {
         int frontTurns = p / 2;
         int backTurns = n / 2 - p / 2;
         return Math.min(frontTurns, backTurns);

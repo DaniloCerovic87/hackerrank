@@ -10,7 +10,7 @@ public class BonAppetit {
         bonAppetit(Arrays.asList(3, 10, 2, 9), 1, 9);
     }
 
-    public static void bonAppetit(List<Integer> bill, int k, int b) {
+    private static void bonAppetit(List<Integer> bill, int k, int b) {
         int sum = 0;
 
         for (Integer e : bill) {

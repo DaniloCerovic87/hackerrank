@@ -8,7 +8,7 @@ public class BiggerIsGreater {
         System.out.println(biggerIsGreater("dkhc"));
     }
 
-    public static String biggerIsGreater(String w) {
+    private static String biggerIsGreater(String w) {
         char[] chars = w.toCharArray();
         int i = chars.length - 1;
 

@@ -18,7 +18,7 @@ public class CutTheSticks {
         System.out.println(cutTheSticks(list));
     }
 
-    public static List<Integer> cutTheSticks(List<Integer> arr) {
+    private static List<Integer> cutTheSticks(List<Integer> arr) {
         Collections.sort(arr);
         List<Integer> sticksPerIteration = new ArrayList<>();
 

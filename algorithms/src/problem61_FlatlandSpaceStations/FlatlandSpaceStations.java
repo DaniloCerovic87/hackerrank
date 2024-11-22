@@ -9,7 +9,7 @@ public class FlatlandSpaceStations {
         System.out.println(flatlandSpaceStations( 5, new int[]{0, 4} ));
     }
 
-    static int flatlandSpaceStations(int n, int[] c) {
+    private static int flatlandSpaceStations(int n, int[] c) {
         Arrays.sort( c );
 
         int maximumDistance = 0;

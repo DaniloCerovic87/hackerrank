@@ -8,7 +8,7 @@ public class ExtraLongFactorials {
         extraLongFactorials(30);
     }
 
-    public static void extraLongFactorials(int n) {
+    private static void extraLongFactorials(int n) {
         BigInteger result = BigInteger.ONE;
 
         for (int i = 2; i <= n; i++) {

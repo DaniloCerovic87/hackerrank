@@ -6,7 +6,7 @@ public class Kangaroo {
         System.out.println(kangaroo(0, 3, 4, 2));
     }
 
-    public static String kangaroo(int x1, int v1, int x2, int v2) {
+    private static String kangaroo(int x1, int v1, int x2, int v2) {
         int i = 0;
         int firstKangaroo = x1;
         int secondKangaroo = x2;

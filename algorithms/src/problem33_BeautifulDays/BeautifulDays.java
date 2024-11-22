@@ -6,12 +6,12 @@ public class BeautifulDays {
         System.out.println(beautifulDays(20, 23, 6));
     }
 
-    public static int beautifulDays(int i, int j, int k) {
+    private static int beautifulDays(int i, int j, int k) {
         int numberOfBeautifulDays = 0;
         StringBuilder sb = new StringBuilder();
 
         for (int f = i; f <= j; f++) {
-            int reversedNumber = Integer.parseInt(sb.append(f).reverse().toString()); // ili koristi funkciju
+            int reversedNumber = Integer.parseInt(sb.append(f).reverse().toString()); // or use the function below
             if ((f - reversedNumber) % k == 0) {
                 numberOfBeautifulDays++;
             }
@@ -20,8 +20,8 @@ public class BeautifulDays {
         return numberOfBeautifulDays;
     }
 
-    // funkcija za okretanje brojeva
-    public static int reverseNumber(int n) {
+    // function for reversing numbers
+    private static int reverseNumber(int n) {
         int reversed = 0;
         while (n != 0) {
             reversed = reversed * 10 + n % 10;
