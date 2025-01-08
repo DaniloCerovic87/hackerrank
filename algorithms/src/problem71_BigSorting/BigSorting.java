@@ -20,7 +20,7 @@ public class BigSorting {
         System.out.println(bigSorting(unsorted));
     }
 
-    public static List<String> bigSorting(List<String> unsorted) {
+    private static List<String> bigSorting(List<String> unsorted) {
         unsorted.sort((a, b) -> {
             if(a.length() != b.length()) {
                 return a.length() -b.length();
