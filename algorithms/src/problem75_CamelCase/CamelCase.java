@@ -3,17 +3,17 @@ package problem75_CamelCase;
 public class CamelCase {
 
     public static void main(String[] args) {
-        System.out.println(camelcase("saveChangesInTheEditor"));
+        System.out.println(camelcase("manOrderedTwoCupsOfCoffee"));
     }
 
     private static int camelcase(String s) {
-       int count = 1;
-       for(int i = 0; i < s.length(); i++) {
-           if(Character.isUpperCase(s.charAt(i))) {
-               count++;
+       int countUpperCase = 0;
+       for(String c : s.split("")) {
+           if(c.equals(c.toUpperCase())) {
+               countUpperCase++;
            }
        }
-       return count;
+       return countUpperCase + 1;
     }
 
 }
