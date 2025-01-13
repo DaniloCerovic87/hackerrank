@@ -12,8 +12,8 @@ public class Pangrams {
 
     private static String pangrams(String s) {
         Set<Character> characters = new HashSet<>();
-        for(char c : s.toLowerCase().toCharArray()) {
-            if(Character.isAlphabetic(c)) {
+        for (char c : s.toLowerCase().toCharArray()) {
+            if (Character.isAlphabetic(c)) {
                 characters.add(c);
             }
         }
