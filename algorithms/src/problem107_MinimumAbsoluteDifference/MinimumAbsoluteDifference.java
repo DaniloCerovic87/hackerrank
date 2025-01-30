@@ -11,7 +11,7 @@ public class MinimumAbsoluteDifference {
         System.out.println(minimumAbsoluteDifference(Arrays.asList(-59, -36, -13, 1, -53, -92, -2, -96, -54, 75)));
     }
 
-    public static int minimumAbsoluteDifference(List<Integer> arr) {
+    private static int minimumAbsoluteDifference(List<Integer> arr) {
         Collections.sort(arr);
 
         int minDifference = Integer.MAX_VALUE;
