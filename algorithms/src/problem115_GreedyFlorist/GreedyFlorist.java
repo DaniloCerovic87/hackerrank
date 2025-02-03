@@ -15,10 +15,12 @@ public class GreedyFlorist {
         Arrays.sort(c);
         int price = 0;
         int count = 0;
+
         for (int i = c.length - 1; i >= 0; i--) {
             price += (count / k + 1) * c[i];
             count++;
         }
+
         return price;
     }
 
