@@ -1,4 +1,4 @@
-package problem128_StringsXor;
+package problem129_StringsXor;
 
 public class StringsXor {
 
