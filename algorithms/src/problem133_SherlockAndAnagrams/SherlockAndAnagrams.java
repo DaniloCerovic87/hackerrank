@@ -6,6 +6,7 @@ public class SherlockAndAnagrams {
 
     public static void main(String[] args) {
         System.out.println(sherlockAndAnagrams("abba"));
+        System.out.println(sherlockAndAnagrams("kkkk"));
     }
 
     private static int sherlockAndAnagrams(String s) {
